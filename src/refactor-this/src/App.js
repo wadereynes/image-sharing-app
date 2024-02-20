@@ -22,7 +22,8 @@ function ImageGallery() {
     let promises = [];
 
     for (let i = currentBatch; i < batch; i++) {
-      await fetch(`http://localhost:8888/images?category=${activeCategory}&page=${i}`)
+      // await fetch(`http://localhost:8888/images?category=${activeCategory}&page=${i}`)
+      await fetch(`https://image-sharing-app-t4xs.onrender.com/images?category=${activeCategory}&page=${i}`)
         .then((response) => response.json())
         .then((data) => promises.push(data));
     }
