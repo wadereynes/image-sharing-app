@@ -2,7 +2,8 @@
 
 const config = require('./config.js')
 
-const imgDir = `http://localhost:${config.port}/static/images`
+// const imgDir = `http://localhost:${config.port}/static/images`
+const imgDir = `https://image-sharing-app-t4xs.onrender.com/static/images`
 
 function createCategoryItems(category, itemsCount) {
   let result = []
