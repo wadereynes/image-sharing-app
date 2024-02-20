@@ -2,7 +2,8 @@
   "name": "image-sharing-app",
   "version": "1.0.0",
   "description": "Image sharing app",
-  "main": "src/refactor-this/index.js",
+  "main": "src/refactor-this/src/index.js",
+  "type": "module",
   "scripts": {
     "node-modules-check": "test -d src/refactor-this/node_modules || (cd src/refactor-this && npm install && npm start)",
     "server": "node src/do-not-refactor/server.js",
